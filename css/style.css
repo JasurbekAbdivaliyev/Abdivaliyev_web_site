@@ -1,0 +1,759 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Teko:wght@300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Teko', sans-serif;
+  background: #171152;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/*Creative scrool style*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: black;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-color: #e5ff00;
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+#home{
+    background-image: url(../Materials/HomeBackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+/*navbar style*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2.5rem;
+    background-color: #2f2e87;
+    border-bottom: 1px solid #e5ff00;
+}
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #e5ff00;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: white;
+    transition: 0.2s all linear;
+}
+
+.nav-link:hover{
+    color: #e5ff00;
+}
+
+.nav-logo {
+    font-size: 2.1rem;
+    font-weight: 500;
+    color: #e5ff00;
+    font-family: 'Fruktur', cursive;
+}
+
+
+/*header style*/
+
+#home .welcome{
+    text-align: center;
+    margin-top: 30vh;  
+}
+#home .welcome .Me{
+    color: #e5ff00;
+    font-size: 67px;
+}
+#home .welcome .Jobs{
+    color: white;
+    font-size: 50px;
+    margin-top: -19px;
+}
+#home .welcome .buttons .aloqa{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background: inherit;
+    border: 2px solid #e5ff00;
+    color: #e5ff00;
+    font-size: 25px;
+    font-family: 'Teko', sans-serif;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+#home .welcome .buttons .aloqa:hover{
+    border: none;
+    color: #171152;
+    background: #e5ff00;
+}
+#home .welcome .buttons .rezyume{
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background: #e5ff00;
+    border: none;
+    color: #171152;
+    font-size: 25px;
+    margin-left: 10px;
+    font-family: 'Teko', sans-serif;
+    transition: 0.2s all linear;
+}
+#home .welcome .buttons .rezyume:hover{
+    border:2px solid #e5ff00;
+    color: #e5ff00;
+    background: inherit;
+}
+
+/*About section style*/
+#about{
+    padding: 30px 0px;
+}
+.pageName{
+    font-size: 67px;
+    text-align: center;
+    margin-top: 60px;
+    color: #e5ff00;
+}
+#about .personal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90vw;
+    margin: 40px auto;
+}
+#about .personal .imgMe{
+    width: 20vw;
+    height: 50vh;
+    border-radius: 30px;
+    background-image: url(../Materials/Me.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#about .personal .personalInfo{
+    width: 50vw;
+    margin-left: 100px;
+}
+#about .personal .personalInfo .meInfo{
+    color: white;
+    font-size: 36px;
+}
+
+/*Portfolio section style*/
+
+
+#portfolio{
+    padding: 30px 0px;
+}
+#portfolio .fullPortfolio{
+    display: flex;
+    width: 80vw;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+    color: white;
+}
+#portfolio .fullPortfolio .githubPortfolio, .tgPortfolio{
+    width: 45%;
+}
+#portfolio .fullPortfolio .portfolioText{
+    font-size: 36px;
+    margin-top: 60px;
+}
+#portfolio .fullPortfolio .githubLink, .tgLink{
+    color: #e5ff00;
+}
+#portfolio .fullPortfolio .githubLink:hover{
+    text-decoration: underline;
+}
+#portfolio .fullPortfolio .tgLink:hover{
+    text-decoration: underline;
+}
+#portfolio .fullPortfolio .portfolioImg{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 20px auto;
+    border: 2px solid #e5ff00;
+}
+#portfolio .fullPortfolio .githubImg{
+    background-image: url(../Materials/git%20hub.png);
+}
+#portfolio .fullPortfolio .tgImg{
+    background-image: url(../Materials/Myportfolio.jpg);
+}
+
+/*CONTACT section style;*/
+#contact .form{
+    width: 70vw;
+    margin: 50px auto;
+    text-align: center;
+}
+#contact .form .name{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+#contact .form textarea{
+    width: 100%;
+    height: 25vh;
+    margin-top: 7px;
+    border-radius: 6px;
+}
+#contact .form textarea:focus{
+    outline: none;
+}
+#contact .form .name input{
+    height: 30px;
+    border-radius: 7px;
+}
+#contact .form .name input:focus{
+    outline: none;
+}
+#contact .form .name .firstname{
+    width: 45.5%;
+}
+#contact .form .name .email{
+    width: 45.5%;
+}
+#contact .form .submit{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border: 3px solid #e5ff00;
+    color: #e5ff00;
+    background: inherit;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+#contact .form .submit:hover{
+    color: #171152;
+    border: none;
+    background: #e5ff00;
+}
+#contact input{
+    border: none;
+    padding: 0px 19px;
+}
+#contact{
+    padding-bottom: 160px;
+}
+
+/*footer style*/
+
+
+footer {
+  text-align: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-image: url(../Materials/HomeBackground.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  border-top: 1px solid #e5ff00;;
+}
+footer p {
+  padding-top: 20px;
+  color: white;
+  font-size: 33px;
+}
+footer .social-icon {
+  padding: 0;
+  margin: 0;
+}
+footer .social-icon li {
+  list-style: none;
+  display: inline-block;
+  padding: 6px;
+}
+footer .social-icon li a {
+  color: #e5ff00;
+  font-size: 30px;
+  width: 56px;
+  height: 56px;
+  line-height: 60px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.4s ease-in-out;
+}
+footer p i{
+    color: red;
+}
+
+
+/* ==========================================================================
+Responsive web site
+========================================================================== */
+
+/*navbar responsive*/
+
+@media only screen and (max-width: 768px) {
+    .navbar{
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #171152;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        border-bottom: 2px solid #e5ff00;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
+    /*// Inside the Media Query.*/
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+
+     /*home responsive style*/
+
+@media (min-width: 0px) and (max-width: 475.9px){
+    #home{
+    background-position: top;
+    }
+    #home .welcome{
+    margin-top: 40vh;    
+    }
+    #home .welcome .Me{
+    font-size: 47px;
+    }
+    #home .welcome .Jobs{
+    font-size: 30px;
+    }
+    #home .welcome .buttons .aloqa{
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #e5ff00;
+    font-size: 20px;
+    }
+    #home .welcome .buttons .rezyume{
+    width: 110px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid #e5ff00;
+    font-size: 20px;
+    }
+    
+    /*about responsive style*/
+    
+    #about .personal{
+    display: flex;
+    width: 90vw;
+    margin: 40px auto;
+    flex-direction: column;
+    }
+    #about .personal .imgMe{
+    width: 60vw;
+    height: 50vh;
+    border-radius: 20px;
+    }
+    #about .personal .personalInfo{
+    width: 80vw;
+    margin: 0px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    #about .personal .personalInfo .meInfo{
+    font-size: 22px;
+    }
+    
+    /*portfolio responsive style*/
+    
+    #portfolio{
+    padding: 0px;
+    }
+    #portfolio .fullPortfolio{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    margin: 50px auto;
+    flex-direction: column;
+    }
+    #portfolio .fullPortfolio .githubPortfolio, .tgPortfolio{
+    width: 85%;
+    }
+    #portfolio .fullPortfolio .portfolioText{
+    font-size: 22px;
+    margin-top: 60px;
+    }
+    #portfolio .fullPortfolio .tgImg{
+    margin-top: 70px;
+    }
+    #portfolio .fullPortfolio .tgInfo .githubInfo{
+       width: 90%;
+    }
+    
+    /*contact section responsive style*/
+    
+    #contact input{
+    border: none;
+    padding: 0px 4px;
+    }
+    #contact{
+    padding-bottom: 100px;
+    }
+    
+    /*footer section responsive style*/
+    
+    footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    footer p {
+    color: white;
+    font-size: 21px;
+    }
+    footer .social-icon li a {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    }
+
+}
+
+        @media (min-width: 476px) and (max-width: 775.9px){
+/*    home style responsive    */
+    
+    #home{
+    background-position: top;
+    }
+    #home .welcome{
+    margin-top: 37vh;    
+    }
+    #home .welcome .Me{
+    font-size: 57px;
+    }
+    #home .welcome .Jobs{
+    font-size: 40px;
+    }
+    #home .welcome .buttons .aloqa{
+    width: 130px;
+    height: 45px;
+    font-size: 23px;
+    }
+    #home .welcome .buttons .rezyume{
+    width: 130px;
+    height: 45px;
+    font-size: 23px;
+    }
+    
+    /*about responsive style*/
+    
+
+    #about .personal .imgMe{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 20px;
+    }
+    #about .personal .personalInfo{
+    width: 40vw;
+    margin-left: 90px;
+    margin-top: 0px;
+
+    }
+    #about .personal .personalInfo .meInfo{
+    font-size: 25px;
+    }
+    
+    /*portfolio responsive style*/
+    
+    #portfolio{
+    padding: 0px;
+    }
+    #portfolio .fullPortfolio{
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    margin: 50px auto;
+    flex-direction: column;
+    }
+    #portfolio .fullPortfolio .githubPortfolio, .tgPortfolio{
+    width: 85%;
+    }
+    #portfolio .fullPortfolio .portfolioText{
+    font-size: 30px;
+    margin-top: 60px;
+    }
+    #portfolio .fullPortfolio .tgImg{
+    margin-top: 70px;
+    }
+    #portfolio .fullPortfolio .tgInfo .githubInfo{
+       width: 90%;
+    }
+    
+    /*contact section responsive style*/
+    
+    #contact input{
+    border: none;
+    padding: 0px 8px;
+    }
+    #contact{
+    padding-bottom: 100px;
+    }
+    
+    /*footer section responsive style*/
+    
+    footer {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+    footer p {
+    color: white;
+    font-size: 25px;
+    }
+    footer .social-icon li a {
+    font-size: 23px;
+    width: 33px;
+    height: 33px;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    }
+
+}
+
+    /*Resposnive web site Planshet*/
+
+    @media (min-width: 776px) and (max-width: 988.9px){
+/*    home style responsive    */
+    
+    
+    /*about responsive style*/
+    
+
+    #about .personal .imgMe{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 20px;
+    }
+    #about .personal .personalInfo{
+    width: 40vw;
+    margin-left: 90px;
+    margin-top: 0px;
+
+    }
+    #about .personal .personalInfo .meInfo{
+    font-size: 27px;
+    }
+    
+    /*portfolio responsive style*/
+    
+    #portfolio{
+    padding: 0px;
+    }
+    #portfolio .fullPortfolio{
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
+    margin: 50px auto;
+    }
+    #portfolio .fullPortfolio .githubPortfolio, .tgPortfolio{
+    width: 80%;
+    }
+    #portfolio .fullPortfolio .portfolioText{
+    font-size: 30px;
+    margin-top: 60px;
+    }
+    #portfolio .fullPortfolio .tgImg{
+    margin-top: 30px;
+    }
+    #portfolio .fullPortfolio .tgInfo .githubInfo{
+       width: 80%;
+    }
+    #portfolio .fullPortfolio .tgInfo{
+    margin-left: 0px;  
+    }    
+    #portfolio .fullPortfolio .githubInfo{
+    margin-right: 50px;  
+    }
+    
+    /*contact section responsive style*/
+    
+    #contact input{
+    border: none;
+    padding: 0px 12px;
+    }
+    #contact{
+    padding-bottom: 100px;
+    }
+    
+    /*footer section responsive style*/
+    
+    footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    footer p {
+    font-size: 28px;
+    }
+
+}
+
+
+    @media (min-width: 989px) and (max-width: 1200px){
+/*    home style responsive    */
+    
+    
+    /*about responsive style*/
+    
+
+    #about .personal .imgMe{
+    width: 25vw;
+    height: 40vh;
+    border-radius: 20px;
+    }
+    #about .personal .personalInfo{
+    width: 40vw;
+    margin-left: 110px;
+    margin-top: 0px;
+
+    }
+    #about .personal .personalInfo .meInfo{
+    font-size: 30px;
+    }
+    
+    /*portfolio responsive style*/
+    
+    #portfolio{
+    padding: 0px;
+    }
+    #portfolio .fullPortfolio{
+    display: flex;
+    width: 80vw;
+    justify-content: flex-start;
+    margin: 50px auto;
+    }
+    #portfolio .fullPortfolio .githubPortfolio, .tgPortfolio{
+    width: 80%;
+    }
+    #portfolio .fullPortfolio .portfolioText{
+    font-size: 33px;
+    margin-top: 60px;
+    }
+    #portfolio .fullPortfolio .tgImg{
+    margin-top: 30px;
+    }
+    #portfolio .fullPortfolio .tgInfo .githubInfo{
+       width: 80%;
+    }
+    #portfolio .fullPortfolio .tgInfo{
+    margin-left: 0px;  
+    }    
+    #portfolio .fullPortfolio .githubInfo{
+    margin-right: 50px;  
+    }
+    
+    /*contact section responsive style*/
+    
+    #contact input{
+    border: none;
+    padding: 0px 15px;
+    }
+    #contact{
+    padding-bottom: 100px;
+    }
+    
+    /*footer section responsive style*/
+    
+    footer {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    }
+    footer p {
+    font-size: 28px;
+    }
+
+}
+
+
+/* ==========================================================================
+The end web site style| 3-november 2021 year 15:00 | Coder: Abdivaliyev J
+========================================================================== */
+
+
+    
+
